@@ -10,14 +10,18 @@ body {
 
 
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
 
 nav {
+
     position: fixed;
-    top: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #f4c4c3;
     padding: 20px;
     display: flex;
@@ -35,10 +39,15 @@ nav a {
     font-size: 25px;
     text-decoration: none;
     color: #5C3A21;
-cursor: pointer;
+    cursor: pointer;
 }
 
-nav img{
+nav a:hover {
+    color: #8B5E3C;
+    transition: 0.3s;
+}
+
+nav img {
     width: 190px;
 }
 
@@ -47,6 +56,7 @@ nav img{
 .pai-imgs {
 
     display: flex;
+
     align-items: center;
     justify-content: center;
     margin-top: 85px;
@@ -71,7 +81,7 @@ nav img{
 .nomeSobre {
     text-align: center;
     margin-top: 50px;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #5C3A21;
     font-weight: 500;
     font-size: 50px;
@@ -83,12 +93,12 @@ nav img{
     max-width: 700px;
     margin: 0 auto;
     width: 850px;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 25px;
     text-align: justify;
     font-family: 'Poppins' sans-serif;
     color: #5C3A21;
-    
+
 }
 
 
@@ -96,45 +106,45 @@ nav img{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 50px;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #5C3A21;
     font-weight: 500;
     font-size: 50px;
-    
-    
+
+
 
 }
 
 
+.banner {
+    margin-bottom: 80px;
+}
 
-.banner img{
+.banner img {
     width: 400px;
-    border-radius: 55px;
-}
-
-
-
-
-
+    border-radius: 55px;}
 
 
 .Pai {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    flex-wrap: wrap;
+    gap: 280px;
+
 }
 
 
 
 
 .areaCarddois {
-    background-color: #5C3A21;
-    margin: 50px;
-    width: 300px;
-    height: 550px;
+    background-color: #A47148;
+
+    width: 350px;
+    height: 600px;
     border-radius: 10px;
-    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
 }
 
 
@@ -144,20 +154,16 @@ nav img{
     align-items: center;
     justify-content: center;
     margin-top: 25px;
-    transition: all .3s;
-    
 }
-.areaCarddois:hover {
-    transform: translateY(-20px);
 
-}
+
 
 
 .cardDois img {
-    width: 200px;
+    width: 290px;
     border-radius: 10px;
-    
-    
+
+
 
 
 }
@@ -170,28 +176,30 @@ nav img{
 
 
 }
-    
 
-.subPreco { color: whitesmoke;
-    font-family:  'Roboto' sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    font-size: 20px;
-  
-   
+
+.subPreco {
+    color: #FDEBD0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 24px;
+
 }
-.local{
-    
+
+.local {
+
     margin-top: 50px;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #5C3A21;
     font-weight: 500;
     font-size: 50px;
-    margin-left:210px ;
+    margin-left: 210px;
 }
-.subLocalizacao{
+
+.subLocalizacao {
     display: flex;
-    background-color:#f4c4c3 ;
+    background-color: #f4c4c3;
     padding: 100px;
     width: 600px;
     height: 500px;
@@ -200,7 +208,8 @@ nav img{
     border-radius: 10px;
     margin-right: 250px;
 }
-.subLocalizacao iframe{
+
+.subLocalizacao iframe {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,152 +217,191 @@ nav img{
 }
 
 
-.inferior{
+.inferior {
     display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+   
+}
 
+
+.areaContato {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4c4c3;
+    padding: 40px;
+    width: 350px;
+    border-radius: 10px;
+    gap: 20px;
+}
+    
+
+
+.subContato{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.subContato{
-    
+
+.links-contato p {
+    font-family: 'Poppins', sans-serif;
+    color: #5C3A21;
+    font-weight: 500;
+    font-size: 30px;
+    width: 200px;
+    margin-left: 55px;
+
+
+
+}
+.links-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.links-contato a {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-     background-color:#f4c4c3 ;
-    padding: 100px;
-    width: 300px;
-    height: 300px;
-    margin-left: 40px;
-    margin-bottom: 100px;
-    border-radius: 10px;
-    margin-right: 250px;
-
-}
-.subContato p{
- font-family: 'Poppins' sans-serif;
-    color: #5C3A21;
-    font-weight: 500;
-    font-size: 25px;
-    width: 200px;
-margin-left: 80px;
-    
-}
-.subContato img{
-   
-   margin-left: 20px;
-}
-.subContato a{
+    margin-right: 20px;
+    text-align: justify;
     margin-left: 15px;
     text-decoration: none;
-    font-family: 'Poppins' sans-serif;
-    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
     color: #5C3A21;
-    
-    
-   
-}
-
-
-.Contato{
-     margin-top: 50px;
-    font-family: 'Poppins' sans-serif;
-    color: #5C3A21;
-    font-weight: 500;
-    font-size: 50px;
-    margin-left:110px ;}
-
-    
-    @media (max-width:768px){
-
-/* MENU */
-
-nav{
-    
-   
-    flex-direction:row;
-    align-items:center;
-    gap:10px; 
-}
 
 
 
-/* IMAGENS */
-
-.imgs-filho{
-    flex-direction:column;
-    align-items:center;
-}
-
-.imgs-filho img{
-    width:90%;
-}
-
-/* SOBRE */
-
-.texto{
-    
-    padding:20px;
-    text-align:justify;
-    width: auto;
-}
-.banner img{
-    width: 370px;
-}
-
-
-/* CARDS */
-
-.Pai{
-    flex-direction:column;
-    align-items:center;
-}
-
-.areaCarddois{
-    width:90%;
-}
-
-/* FOOTER */
-
-.inferior{
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    gap:20px;
-}
-
-.local{
-    margin-right: 220px;
-}
-.subLocalizacao{
-   margin-left: 240px;
-    width: 80vw;
-  height: 500px;
-}
-.subContato{
-    margin-right: 40px;
-}
-.Contato{
-    margin-right: 95px;
- 
-}
-.subContato p{
-    
-    text-align: center;
-    margin-right: 75px;
 
 }
 
-.subLocalizacao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-iframe{
-    width:400px;
 
-    height:300px;
-}
+
+
+@media (max-width:768px) {
+
+    /* MENU */
+
+    nav {
+
+
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+
+    /* IMAGENS */
+
+    .imgs-filho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgs-filho img {
+        width: 90%;
+    }
+
+    /* SOBRE */
+
+    .texto {
+
+        padding: 20px;
+        text-align: justify;
+        width: auto;
+    }
+
+    .banner img {
+        width: 370px;
+
+    }
+
+
+
+    /* CARDS */
+
+    .Pai {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    .areaCarddois {
+        width: 90%;
+    }
+
+    /* FOOTER */
+
+    .inferior {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .local {
+        margin-right: 220px;
+    }
+
+    .subLocalizacao {
+        margin-left: 240px;
+        width: 80vw;
+        height: 500px;
+    }
+
+    .subContato {
+        margin-right: 0px;
+    }
+
+    .Contato {
+        margin-right: 95px;
+         margin-left: 110px;
+
+
+    }
+
+    .subContato p {
+
+        text-align: center;
+        margin-right: 75px;
+
+    }
+
+    .links-contato {
+       width: 250px;
+       margin-right: 20px;
+    }
+    .links-contato p{
+        margin-left: 30px;
+    }
+    .links-contato a {
+        
+        margin-right: 0px;
+    }
+
+
+    .subLocalizacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
 
 }
